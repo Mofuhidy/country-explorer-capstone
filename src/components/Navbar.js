@@ -1,7 +1,7 @@
 import React from 'react';
-import { AiFillSetting } from '@react-icons/all-files/ai/AiFillSetting';
-import { BiMicrophone } from '@react-icons/all-files/bi/BiMicrophone';
-import icons8GoogleEarth from '../../public/icons8-google-earth.svg';
+import { AiFillSetting } from 'react-icons/ai';
+import { BiMicrophone } from 'react-icons/bi';
+import icons8GoogleEarth from '../assets/icons8-google-earth.svg';
 
 function Navbar() {
   return (
