@@ -51,8 +51,6 @@ function CountryDetails() {
       </div>
       <div className="contianer">
         <div className="general flex flex-row justify-around items-center h-56 bg-sec">
-
-          <div className="background" />
           {(() => {
             switch (countryData[0].continents[0]) {
               case 'Oceania':
