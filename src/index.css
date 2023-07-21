@@ -59,6 +59,14 @@ h1 {
   background-color: var(--black-light);
 }
 
+.general {
+  background-image: url(./assets/59-591407_world-map-png.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-blend-mode: soft-light;
+}
+
 @media (min-width: 640px) {
   .countries-grid .country-box:nth-child(even) {
     background-color: var(--main);

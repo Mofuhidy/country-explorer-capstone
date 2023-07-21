@@ -35,6 +35,7 @@ export const countrySlice = createSlice({
       const countriesData = action.payload.map((country) => ({
         countryId: uuidv4(),
         name: country.name.common,
+        officialName: country.name.official,
         capital: country.capital,
         region: country.region,
         languages: country.languages,
@@ -50,7 +51,7 @@ export const countrySlice = createSlice({
         langugage: country.languages,
         subregion: country.subregion,
         currency: country.currencies,
-        timezones: country.timezones,
+        timezones: country.timezones[0],
         area: country.area,
         flagAlt: `Flag of ${country.name.common}`,
       }));

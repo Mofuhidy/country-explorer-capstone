@@ -32,11 +32,11 @@ function CountryBox({
         <button type="button" onClick={() => navigate(`/conutrydata/${id}`)}>
           <FiArrowRightCircle className=" absolute right-2 top-1 text-xl" />
         </button>
-        <div className=" h-20 w-20 self-center">
+        <div className=" h-20 w-28 self-center">
           <img src={flag} alt={alt} />
         </div>
         <div className="smallDetails self-end">
-          <p className="countryName font-bold uppercase text-right text-xl">
+          <p className="countryName font-bold uppercase text-right text-lg sm:text-xl">
             {name}
           </p>
           <p className="population  text-sm">

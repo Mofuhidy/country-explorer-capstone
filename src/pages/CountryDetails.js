@@ -51,12 +51,14 @@ function CountryDetails() {
         </div>
       </div>
       <div className="contianer">
-        <div className="general flex flex-row justify-around items-center min-h-48 bg-sec">
+        <div className="general flex flex-row justify-around items-center h-56 bg-sec">
+
+          <div className="background" />
           {(() => {
             switch (countryData[0].continents[0]) {
               case 'Oceania':
                 return (
-                  <div className="continet flex flex-col-reverse items-center justify-around  h-40 relative mb-6">
+                  <div className="continet flex flex-col-reverse items-center justify-around  w-32 h-40 relative mb-6">
                     <p className=" absolute top-36 font-bold uppercase">
                       Oceania
                     </p>
@@ -68,7 +70,7 @@ function CountryDetails() {
 
               case 'Africa':
                 return (
-                  <div className="continet flex flex-col-reverse items-center justify-around  h-40 relative mb-6">
+                  <div className="continet flex flex-col-reverse items-center justify-around  w-32  h-40 relative mb-6">
                     <p className=" absolute top-36 font-bold uppercase">
                       Africa
                     </p>
@@ -80,7 +82,7 @@ function CountryDetails() {
 
               case 'Asia':
                 return (
-                  <div className="continet flex flex-col-reverse items-center justify-around  h-40 relative mb-6">
+                  <div className="continet flex flex-col-reverse items-center justify-around  w-32  h-40 relative mb-6">
                     <p className=" absolute top-36 font-bold uppercase">Asia</p>
                     <div className=" w-24 ">
                       <img src={asia} alt="Asia continent" />
@@ -89,7 +91,7 @@ function CountryDetails() {
                 );
               case 'Europe':
                 return (
-                  <div className="continet flex flex-col-reverse items-center justify-around  h-40 relative mb-6">
+                  <div className="continet flex flex-col-reverse items-center justify-around  w-32  h-40 relative mb-6">
                     <p className=" absolute top-36 font-bold uppercase">
                       Europe
                     </p>
@@ -100,8 +102,8 @@ function CountryDetails() {
                 );
               case 'North America':
                 return (
-                  <div className="continet flex flex-col-reverse items-center justify-around  h-40 relative mb-6">
-                    <p className=" absolute top-36 font-bold uppercase">
+                  <div className="continet flex flex-col-reverse items-center justify-around  w-32  h-40 relative mb-6">
+                    <p className=" absolute top-36 font-bold uppercase w-36">
                       North America
                     </p>
                     <div className=" w-24 ">
@@ -111,8 +113,8 @@ function CountryDetails() {
                 );
               case 'South America':
                 return (
-                  <div className="continet flex flex-col-reverse items-center justify-around  h-40 relative mb-6">
-                    <p className=" absolute top-36 font-bold uppercase">
+                  <div className="continet flex flex-col-reverse items-center justify-around  w-32  h-40 relative mb-6">
+                    <p className=" absolute top-36 font-bold uppercase w-36">
                       South America
                     </p>
                     <div className=" w-24 ">
@@ -122,7 +124,7 @@ function CountryDetails() {
                 );
               default:
                 return (
-                  <div className="continet flex flex-col-reverse items-center justify-around  h-40 relative mb-6">
+                  <div className="continet flex flex-col-reverse items-center justify-around  w-32   h-40 relative mb-6">
                     <p className=" absolute top-36 font-bold uppercase">
                       Antarctica
                     </p>
@@ -133,7 +135,7 @@ function CountryDetails() {
                 );
             }
           })()}
-          <div className="country flex flex-col-reverse items-center justify-around h-40 relative mb-6">
+          <div className="country flex flex-col-reverse items-center justify-around  w-32  h-40 relative mb-6">
             <p className=" absolute top-36 font-bold uppercase">
               {countryData[0].name}
             </p>
@@ -143,37 +145,49 @@ function CountryDetails() {
           </div>
         </div>
         <div className="details  h-auto flex justify-center">
-          <ul className=" flex flex-col justify-center overflow-y-auto w-full h-96">
+          <ul className=" flex flex-col justify-center overflow-y-auto w-full ">
+            <li className=" p-2 ">
+              <span className=" text-base font-semibold">
+                {`${countryData[0].name}'s details:`}
+              </span>
+            </li>
             <li className="flex justify-between px-8 h-16 items-center">
               <span className=" font-semibold text-base">Logo:</span>
-              <span className=" w-5">
+              <span className=" w-7">
                 <img src={countryData[0].coatOfArms} alt="Coat of arms" />
+              </span>
+            </li>
+
+            <li className="flex justify-between px-8 h-16 items-center">
+              <span className=" font-semibold text-base">Offical Name:</span>
+              <span className=" font-medium text-base">
+                {countryData[0].officialName}
               </span>
             </li>
             <li className="flex justify-between px-8 h-16 items-center">
               <span className=" font-semibold text-base">Capital:</span>
-              <span className=" font-medium text-sm">
+              <span className=" font-medium text-base">
                 {countryData[0].capital}
               </span>
             </li>
             <li className="flex justify-between px-8 h-16 items-center">
               <span className=" font-semibold text-base">Area:</span>
-              <span className=" font-medium text-sm">
+              <span className=" font-medium text-base">
                 {`${countryData[0].area} sq km`}
               </span>
             </li>
 
             <li className="flex justify-between px-8 h-16 items-center">
               <span className=" font-semibold text-base">Region:</span>
-              <span className=" font-medium text-sm">
+              <span className=" font-medium text-base">
                 {countryData[0].region}
               </span>
             </li>
 
             <li className="flex justify-between px-8 h-16 items-center">
               <span className=" font-semibold text-base">Time Zone:</span>
-              <span className=" font-medium text-sm">
-                {countryData[0].timezones.join(', ')}
+              <span className=" font-medium text-base">
+                {countryData[0].timezones}
               </span>
             </li>
           </ul>
