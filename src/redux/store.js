@@ -5,6 +5,7 @@ const store = configureStore({
   reducer: {
     countries: countriesReducer,
   },
+  middleware: (getDefaultMiddleware) => getDefaultMiddleware(),
 });
 
 export default store;
