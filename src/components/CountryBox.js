@@ -4,10 +4,9 @@ import PropTypes from 'prop-types';
 import { FiArrowRightCircle } from 'react-icons/fi';
 
 function CountryBox({
-  flag, name, capital, pop, id, alt,
+  flag, name, pop, id, alt,
 }) {
   const navigate = useNavigate();
-
   const formatNumber = (number) => {
     if (number >= 1e9) {
       // Display numbers greater than or equal to 1 billion as 'X.XXB'
@@ -40,7 +39,6 @@ function CountryBox({
           <p className="countryName font-bold uppercase text-right text-xl">
             {name}
           </p>
-          <p className="countryName font-light text-sm text-right">{capital}</p>
           <p className="population  text-sm">
             population:
             {' '}
@@ -55,7 +53,6 @@ function CountryBox({
 CountryBox.propTypes = {
   flag: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
-  capital: PropTypes.arrayOf(PropTypes.string).isRequired,
   pop: PropTypes.number.isRequired,
   id: PropTypes.string.isRequired,
   alt: PropTypes.string.isRequired,

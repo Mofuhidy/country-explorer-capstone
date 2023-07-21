@@ -97,7 +97,6 @@ function HomePage() {
             key={country.countryId}
             flag={country.flag}
             name={country.name}
-            capital={country.capital}
             pop={country.population}
             id={country.countryId}
             alt={country.flagAlt}

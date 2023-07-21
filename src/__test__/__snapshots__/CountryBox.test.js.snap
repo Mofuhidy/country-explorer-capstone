@@ -60,11 +60,6 @@ exports[`CountryBox component test Check if the component changed 1`] = `
       Yemen
     </p>
     <p
-      className="countryName font-light text-sm text-right"
-    >
-      Sana'a
-    </p>
-    <p
       className="population  text-sm"
     >
       population:
