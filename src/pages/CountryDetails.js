@@ -12,7 +12,6 @@ import southAmerica from '../assets/images/filled/southAmerica.svg';
 
 function CountryDetails() {
   const { loading, countries, error } = useSelector((state) => state.countries);
-
   const nav = useNavigate();
   const { countryId } = useParams();
 
