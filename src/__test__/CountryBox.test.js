@@ -11,9 +11,6 @@ describe('CountryBox component test', () => {
   const yemen = {
     flag: 'https://flagcdn.com/w320/ye.png',
     name: 'Yemen',
-    capital: [
-      "Sana'a",
-    ],
     pop: 29830000,
     id: 'b235b6cd-63de-461f-97ab-a8cfb49ea39b',
     alt: 'flag of Yemen',
@@ -30,7 +27,6 @@ describe('CountryBox component test', () => {
               name={yemen.name}
               flag={yemen.flag}
               pop={yemen.pop}
-              capital={yemen.capital}
               alt={yemen.alt}
             />
           </BrowserRouter>
@@ -50,7 +46,6 @@ describe('CountryBox component test', () => {
             name={yemen.name}
             flag={yemen.flag}
             pop={yemen.pop}
-            capital={yemen.capital}
             alt={yemen.alt}
           />
         </BrowserRouter>

@@ -10,7 +10,7 @@ function Navbar() {
       data-testid="nav"
     >
       <img src={icons8GoogleEarth} alt="google earth icon" className=" h-10" />
-      <p className=" font-bold">Country Explorer</p>
+      <p className=" font-bold">Countries Explorer</p>
       <div className="flex">
         <BiMicrophone className=" text-lg mr-2" />
         <AiFillSetting className=" text-lg" />
