@@ -15,7 +15,7 @@ function HomePage() {
     dispatch(fetchCountries());
   }, [dispatch]);
 
-  // search filtering
+  //  filtering
   const searchedCountries = countries.filter(
     (country) => country.name.toLowerCase().includes(searched.toLowerCase()),
   );
@@ -82,7 +82,9 @@ function HomePage() {
               type="search"
               id="search"
               onInput={handleFiltering}
-              className="p-2 pl-8 rounded text-blue-950 bg-slate-200 placeholder:text-xs text-xs  focus-visible:outline-0  w-72  focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              className="p-2 pl-8 rounded text-blue-950 bg-slate-200 placeholder:text-xs text-xs
+               focus-visible:outline-0  w-72  focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700
+                dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               placeholder="search by country name"
             />
           </div>
