@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <br/>
+
   <h1><b>Countries Explorer - React Single-Page Application</b></h1>
 
 </div>
